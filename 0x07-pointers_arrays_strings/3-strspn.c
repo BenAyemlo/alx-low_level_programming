@@ -14,7 +14,7 @@ while (accept[a])
 {
 b = 0;
 
-whille (s[b] != 32)
+while (s[b] != 32)
 {
 if (accept[a] == s[b])
 {
