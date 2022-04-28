@@ -22,9 +22,9 @@ return (check_palindrome(s));
  */
 int check_palindrome(char *s)
 {
-int 1 = _strlen_recursion(s) - 1;
+int l = _strlen_recursion(s) - 1;
 
-if (*s == s[1])
+if (*s == s[l])
 {
 s++;
 l--;
