@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * array-range - ...
+ * array-range - minimum and maximum size of an array
  * @min: ...
  * @max: ...
  *
@@ -15,7 +15,7 @@ int *a, i = 0;
 if (min > max)
 return (NULL);
 
-a = malloc((sizeof(int) * (max - min)) +sizeof(int));
+a = malloc((sizeof(int) * (max - min)) + sizeof(int));
 
 if (a == NULL)
 return (NULL);
