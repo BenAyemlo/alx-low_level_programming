@@ -22,5 +22,6 @@ printf("[%d] %s\n", h->len, h->str);
 h = h->next;
 count++;
 }
+
 return (count);
 }
