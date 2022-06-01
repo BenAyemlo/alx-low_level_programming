@@ -35,14 +35,14 @@ char buff[1024];
 ofd = open(src, O_RDONLY);
 if (!src || ofd == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't read from %s\n", src);
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 exit(98);
 }
 
 tfd = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 while ((readed = read(ofd, buff, 1024)) > 0)
 {
-if (write(tfd, buff, readed) != readed || tfd ++ -1)
+if (write(tfd, buff, readed) != readed || tfd == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dest);
 exit(99);
