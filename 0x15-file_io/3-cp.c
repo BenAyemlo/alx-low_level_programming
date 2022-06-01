@@ -27,7 +27,7 @@ exit(0);
  *
  * Return: ...
  */
-void copy_file(const car *src, const char *dest)
+void copy_file(const char *src, const char *dest)
 {
 int ofd, tfd, readed;
 char buff[1024];
